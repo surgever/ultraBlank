@@ -1,0 +1,81 @@
+/*
+Theme Name: Ultra Blank Theme
+Author: Surgever
+Author URI: http://surgever.com/
+Description: Ultra Blank theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, yellow, purple
+Text Domain: blank
+*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html{font-family:arial,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0px; padding:0}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}a {text-decoration: none}
+p {margin: 0 0 1em}
+blockquote,q{quotes:none}
+a:hover {color: #05C}
+
+/* GENERAL */
+/* Wordpress essentials */
+.alignnone {margin: 5px 20px 20px 0;}
+.aligncenter, div.aligncenter {display: block;margin: 5px auto 5px auto;text-align: center }
+.alignright {float: right;margin: 5px 0 20px 20px;}
+.alignleft {float: left;margin: 5px 20px 20px 0;}
+a img.alignright {float: right;margin: 5px 0 20px 20px;}
+a img.alignnone {margin: 5px 20px 20px 0;}
+a img.alignleft {float: left;margin: 5px 20px 20px 0;}
+a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
+.wp-caption {background: #FFF;border: 1px solid #F0F0F0;max-width: 96%;padding: 5px 3px 10px;text-align: center;}
+.wp-caption.alignnone {margin: 5px 20px 20px 0;}
+.wp-caption.alignleft {margin: 5px 20px 20px 0;}
+.wp-caption.alignright {margin: 5px 0 20px 20px;}
+.wp-caption img {border: 0 none;height: auto;margin: 0;max-width: 98.5%;padding: 0;width: auto;}
+.wp-caption .wp-caption-text, .gallery-caption {font-size: 11px;line-height: 17px;margin: 0;padding: 0 4px 5px;}
+.gallery {clear: both}
+.gallery-row{margin: 0 auto }
+.gallery-item {float: left; width: 33%; text-align: center}
+.gallery-columns-1 .gallery-item {width: 100%;}.gallery-columns-2 .gallery-item {width: 50%}.gallery-columns-4 .gallery-item {width: 25%;}.gallery-columns-5 .gallery-item {width: 20%;}
+.gallery-columns-6 .gallery-item {width: 16%;}.gallery-columns-7 .gallery-item {width: 14%;}.gallery-columns-8 .gallery-item {width: 12%;}.gallery-columns-9 .gallery-item {width: 11%}
+.gallery-item  img {max-width: 90%}
+.bypostauthor{}
+/* Useful classes */
+.clear {clear: both;}
+.transition {-webkit-transition: .3s ease-out;-moz-transition: .3s ease-out;-ms-transition: .3s ease-out;-o-transition: .3s ease-out;transition: .3s ease-out;}
+.screen-reader-text {display: none; text-indent:-9999px}
+/* Some Basic Styling */
+body {background: #eee}
+.wrapper {max-width: 1400px; margin: 0 auto}
+#site-title, #archive-title, #primary-menu, .hentry, .widget, footer {background: #fff; margin: 0 0 10px; padding: 1em; }
+#site-title {display: block; font-size: 24px; }
+#site-title img {vertical-align: middle}
+main {width: 75%; float: left; margin: 0}
+#archive-title * {margin: 0;}
+#sidebar {width: 25%; float: right; margin: 0; opacity: 1!important}
+.hentry {margin: 0 10px 10px;}
+.hentry.sticky {border-left: 5px solid #ddd}
+.hentry .post-title {margin: 0 0 10px}
+.hentry img {max-width: 100%; height: auto }
+.hentry iframe, .hentry embed {display: block; margin: 0 auto;}
+.post-content a:hover, .post-meta a:hover {text-decoration: underline}
+.pagination {margin: 10px; text-align:center; }
+.pagination a, .pagination span {padding: .5em; background: #fff; display: inline-block;}
+footer {clear:both; margin: 0; text-align: center; }
+.comment {background: rgba(0,0,0,0.05); margin: 10px 0; padding: .5em; list-style: none} 
+table {width: 100%; border-collapse: collapse; line-height: 2em;}
+tr {border-bottom: 1px solid #eee}
+input,textarea {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; max-width: 100%;}
+/* Responsive examples */
+@media only screen and (min-width: 1400px) {
+	/* Remove post left indentation on wider screens */
+    .hentry {margin-left: 0px} 
+}
+@media only screen and (max-width: 960px) {
+	/* Make sidebar wider on smaller screens */
+    main {width: 65%;}
+	#sidebar {width: 35%;}
+}
+@media only screen and (max-width: 680px) {
+	/* Place sidebar under content on mobile screens */
+    main,#sidebar {float: none; width: auto;}
+}
