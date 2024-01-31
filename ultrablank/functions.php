@@ -160,17 +160,18 @@ function the_compulsory_thumbnail($size = 'thumbnail',$display = 'echo', $postid
 		$id = get_post_thumbnail_id($postid);
 	} else {
 		/*Search img in content */
-		$content = apply_filters('the_content',get_post_field('post_content', $post_id));
+		$content = apply_filters('the_content',get_post_field('post_content', $postid));
 		$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
 		$found_imgurl = $matches[1][0];
 		if(!$found_imgurl) {
 			/*If no image present in content, get first attached image*/
 			$attachments = get_children(array('post_parent' => $postid, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order'));
 			if ($attachments) {
-				if ( ! is_array($attachments) ) continue;
-				$count = count($attachments);
-				$first_attachment = array_shift($attachments);
-				$id = $first_attachment->ID;
+				if ( is_array($attachments) ) {
+					$count = count($attachments);
+					$first_attachment = array_shift($attachments);
+					$id = $first_attachment->ID;
+				}
 			}/* else { 
 			$id = 1; // Fallback: set a default  images
 			}*/
